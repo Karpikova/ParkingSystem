@@ -65,7 +65,7 @@ public class HandlerService implements HandlerServiceInterface{
 
     @Override
     public void printReport() {
-        double toPay;
+        long toPay; //Простим копейки
         int price = ApplicationService.getPrice();
         int minutes = 60;
         for (CarParkingInfo carParkingInfo : ApplicationService.getShiftData()) {
